@@ -1,0 +1,22 @@
+rollno=input("Enter Student Roll no:")
+name=input("Enter Student Name:")
+sub1=int(input("Enter first subject marks:"))
+sub2=int(input("Enter second subject marks:"))
+sub3=int(input("Enter third subject marks:"))
+total=sub1+sub2+sub3
+avg=total/3
+print("Roll no of the Student=",rollno)
+print("Name of the Student=",name)
+print("MARKS OF ALL SUBJECTS\nFIRST SUBJECT=",sub1,"\nSECOND SUBJECT=",sub2,"\nTHIRD SUBJECT=",sub3)
+print("Total Marks=",total)
+print("Average Marks=",avg)
+if avg>=75:
+    print("Result is DISTINCTION")
+elif avg>=60 and avg<75:
+    print("Result is FIRST CLASS")
+elif avg>=50 and avg<60:
+    print("Result is SECOND CLASS")
+elif avg>=35 and avg<50:
+    print("Result is THIRD CLASS")
+else:
+    print("Result is FAIL")
